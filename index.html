@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakna Hansinee | Links</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(45deg, #000428, #004e92);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Starry Background */
+        .starry-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .star {
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+            opacity: 0;
+            animation: flicker 3s infinite ease-in-out;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 0.2; }
+            50% { opacity: 0.9; }
+            100% { opacity: 0.3; }
+        }
+
+        /* Main Container */
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 102, 255, 0.5);
+            max-width: 400px;
+            width: 90%;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Fade In Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Profile Image */
+        .profile img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 3px solid #00bfff;
+            box-shadow: 0 0 10px #00bfff;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 0 10px #00bfff; }
+            to { box-shadow: 0 0 20px #00bfff; }
+        }
+
+        h1 {
+            color: #00bfff;
+            font-size: 24px;
+        }
+
+        .discord-username {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5px;
+            font-size: 14px;
+            color: #b3b3b3;
+        }
+
+        .discord-username img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+
+        .fixed-image {
+    position: fixed;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    width: 100px;
+    height: auto; /* Keeps aspect ratio */
+}
+
+
+        /* Link Styling */
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            margin: 15px 0;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: 0.4s ease-in-out;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            animation: glitteryFadeIn 1s ease-in-out forwards;
+            opacity: 0;
+        }
+
+        /* Animated Glittery Entry */
+        @keyframes glitteryFadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .link::before {
+            content: "";
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            top: -50%;
+            left: -50%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 70%);
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        .link:hover::before {
+            opacity: 1;
+        }
+
+        /* Link Hover Effects */
+        .link:hover {
+            background: #00bfff;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00bfff;
+        }
+
+        .link img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .arrow {
+            margin-left: auto;
+            font-size: 22px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Starry Background -->
+    <div class="starry-background"></div>
+
+    <div class="container">
+        <div class="profile">
+            <img src="https://github.com/laknahansi-08/Lala/blob/main/m.jpg" alt="Profile Picture">
+            <h1>Lakna Hansinee</h1>
+            <div class="discord-username">
+                <img src="https://github.com/laknahansi-08/Lala/blob/main/lakna.jpg" alt="Discord"> @lavender_girl07
+            </div>
+        </div>
+        
+        <div class="links">
+            <a href="https://www.instagram.com/lala_hansi_" class="link">
+                <img src="https://github.com/laknahansi-08/Lala/blob/main/OIP__1_-removebg-preview.png" alt="Instagram"> Instagram <span class="arrow">➜</span>
+            </a>
+            <a href="https://x.com/LHansinee88256" class="link">
+                <img src="https://github.com/laknahansi-08/Lala/blob/main/2e1a1ba7-7f4d-447e-94d5-ebf106280601.png" alt="Twitter"> X (Twitter) <span class="arrow">➜</span>
+            </a>
+            <a href="https://t.me/lala_hansi" class="link">
+                <img src="chttps://github.com/laknahansi-08/Lala/blob/main/fa8e1b0fd63335ebc7b090107592faf3-removebg-preview.png" alt="Telegram"> Telegram <span class="arrow">➜</span>
+            </a>
+            <a href="https://open.spotify.com/user/31od42mdkynlpk3l4krof6kkplxa?si=rF-EyhtqQGeR6okiGW3UxQ" class="link">
+                <img src="https://github.com/laknahansi-08/Lala/blob/main/R__2_-removebg-preview.png" alt="Spotify">Spotify <span class="arrow">➜</span>
+            </a>
+            <a href="https://www.reddit.com/u/Winter-Web-1920/s/OG4nHzxgtD" class="link">
+                <img src="https://github.com/laknahansi-08/Lala/blob/main/34b7e631-d900-4ebc-ab8b-8b06821ab5c7.png" alt="Reddit">Reddit <span class="arrow">➜</span>
+            </a>
+            <a href="https://snapchat.com/t/yX0xQQcr" class="link">
+                <img src="https://github.com/laknahansi-08/Lala/blob/main/kl.png" alt="Snapchat">Snapchat <span class="arrow">➜</span>
+            </a>
+            <a href="https://youtube.com/@lala_hansi?si=kyoLhLObCqgF_eSL" class="link">
+                <img src="https://github.com/laknahansi-08/Lala/blob/main/youtube-logo-transparent-blue-8.png" alt="YouTube">YouTube <span class="arrow">➜</span>
+            </a>
+        </div>
+        <p style="text-align: center; font-size: smaller; font-family: arial; color: #aea8a8;">A FOC Foundation Student from NSBM Green University</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const starryBackground = document.querySelector('.starry-background');
+            for (let i = 0; i < 100; i++) {
+                let star = document.createElement('span');
+                star.classList.add('star');
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                let size = Math.random() * 3 + 1;
+                star.style.width = size + 'px';
+                star.style.height = size + 'px';
+                star.style.animationDuration = Math.random() * 2 + 1.5 + 's';
+                star.style.animationDelay = Math.random() * 2 + 's';
+                starryBackground.appendChild(star);
+            }
+        });
+    </script>
+            
+
+</body>
+</html>
